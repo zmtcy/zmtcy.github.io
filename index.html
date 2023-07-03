@@ -3188,8 +3188,8 @@
                     data-id="e5a7f6b" data-element_type="section"
                     data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;sticky&quot;:&quot;top&quot;,&quot;sticky_on&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;],&quot;sticky_offset&quot;:0,&quot;sticky_effects_offset&quot;:0}"
                     style="position: fixed; margin-top: 0px; margin-bottom: 0px; top: 0px; background-color: transparent;">
-                    <div class="elementor-container elementor-column-gap-default">
-                        <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-a703546"
+                    <div class="elementor-container elementor-column-gap-default" style="width: 100%;">
+                        <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-a703546 elementor-column-33"
                             data-id="a703546" data-element_type="column">
                             <div class="elementor-widget-wrap elementor-element-populated">
                                 <div class="elementor-element elementor-element-1234567 elementor-widget elementor-widget-text-editor"
@@ -3203,7 +3203,7 @@
                             </div>
                         </div>
 
-                        <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-ec4139d"
+                        <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-ec4139d elementor-column-33"
                             data-id="ec4139d" data-element_type="column">
                             <div class="elementor-widget-wrap elementor-element-populated">
                                 <div class="elementor-element elementor-element-cb9aeeb elementor-widget elementor-widget-image"
@@ -3223,24 +3223,59 @@
                                                 width: 48px
                                             }
 
+                                            .elementor-widget-image nav ul {
+                                                display: flex;
+                                                justify-content: space-between;
+                                                list-style: none;
+                                                margin: 0;
+                                                padding: 0;
+                                                width: 100%;
+                                            }
+
+                                            .elementor-widget-image nav li {
+                                                margin-right: 15px;
+                                            }
+
+                                            .elementor-widget-image nav li:last-child {
+                                                margin-right: 80px;
+                                            }
+
                                             .elementor-widget-image img {
                                                 vertical-align: middle;
-                                                display: inline-block
+                                                display: inline-block;
+                                            }
+
+                                            @media (max-width: 767px) {
+                                                .elementor-column-33 {
+                                                    width: 100% !important;
+                                                    margin-right: 0 !important;
+                                                }
+
+                                                .elementor-widget-image nav ul {
+                                                    flex-direction: column;
+                                                    align-items: flex-start;
+                                                    padding-left: 0 !important;
+                                                }
+
+                                                .elementor-widget-image nav li {
+                                                    margin-right: 0 !important;
+                                                    margin-bottom: 15px;
+                                                }
+
+                                                .elementor-widget-image nav li:last-child {
+                                                    margin-bottom: 80px;
+                                                }
                                             }
                                         </style>
                                         <div style="text-align: center; padding: 10px;">
                                             <nav>
-                                                <ul
-                                                    style="display: flex; justify-content: space-between; list-style: none; margin: 0; padding: 0;">
-                                                    <li style="margin-right: 15px;"><a
-                                                            href="https://www.yuque.com/fyzq/pljj">剪辑神器</a></li>
-                                                    <li style="margin-right: 15px;"><a
+                                                <ul>
+                                                    <li><a href="https://www.yuque.com/fyzq/pljj">AI视频批量剪辑大师</a></li>
+                                                    <li><a
                                                             href="https://pasjnttj27s.feishu.cn/docx/NXPndrBXEoC397xczHucX9GMnle">三元课程</a>
                                                     </li>
-                                                    <li style="margin-right: 15px;"><a
-                                                            href="https://www.yuque.com/fyzq/pljj/90">半年赚90万</a></li>
-                                                    <li style="margin-right: 80px;"><a
-                                                            href="https://www.wcfaka.com/links/A6010253">自助购买</a></li>
+                                                    <li><a href="https://www.yuque.com/fyzq/pljj/90">半年赚90万</a></li>
+                                                    <li><a href="https://www.wcfaka.com/links/A6010253">自助购买</a></li>
                                                 </ul>
                                             </nav>
                                         </div>
@@ -3248,6 +3283,7 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-2935d31"
                             data-id="2935d31" data-element_type="column">
                             <div class="elementor-widget-wrap elementor-element-populated">
